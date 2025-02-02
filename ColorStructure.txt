@@ -1,0 +1,25 @@
+
+
+
+## Color Scheme
+### Primary Colors:
+1. **Muted Olive Green**: `#697565`
+   - Used for buttons, highlights, and accents.
+
+2. **Soft Beige**: `#ECDFCC`
+   - Background color for sections, cards, and larger areas.
+
+3. **Dark Olive Gray**: `#3C3D37`
+   - Used for text, headers, and footers.
+
+### Secondary Colors:
+1. **Light Olive Tint**: `#A8B093`
+   - Subtle backgrounds or hover effects.
+
+2. **Cream White**: `#F5F2EB`
+   - Secondary backgrounds for contrast.
+
+### Gradient:
+- **From**: Muted Olive Green (`#697565`)
+- **To**: Soft Beige (`#ECDFCC`)
+  - Applied to buttons, hero sections, and some headers for a calming effect.

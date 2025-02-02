@@ -1,0 +1,169 @@
+
+
+
+<!-- file : index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information for proper rendering and responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional massage services for relaxation and rejuvenation.">
+    <title>Massage Center</title>
+
+    <!-- Link to external stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Add favicon (optional) -->
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+<body>
+    <!-- Main container for the entire website -->
+    <div class="main-container">
+
+        <!-- Header Section: Includes navigation and logo -->
+        <header>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Massage Center Logo" data-i18n="logoAlt">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" data-i18n="home">Home</a></li>
+                    <li><a href="#services" data-i18n="services">Services</a></li>
+                    <li><a href="#about" data-i18n="about">About</a></li>
+                    <li><a href="#contact" data-i18n="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <select id="language-selector">
+                    <option value="en">English</option>
+                    <option value="ar">Arabic</option>
+                    <option value="ru">Russian</option>
+                </select>
+            </div>
+        </header>
+
+        <!-- Hero Section: A welcoming section for visitors -->
+        <section id="home" class="hero fade-in">
+            <div class="hero-container">
+                <!-- Left: Image -->
+                <div class="hero-image">
+                    <img src="assets/images/massage.jpeg" alt="Relaxing massage session">
+                </div>
+                <!-- Right: Text Content -->
+                <div class="hero-content">
+                    <h1 data-i18n="heroHeader">Experience Ultimate Relaxation with Our Expert Massage Services</h1>
+                    <p data-i18n="heroDescription">Step into a world of tranquility with our tailored massage therapies, designed to revitalize your body and mind.</p>
+                    <button class="cta-button" data-i18n="heroCTA" aria-label="Book your massage session now!">Book Your Massage Now!</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section: Highlights available massage services -->
+        <section id="services">
+            <!-- Section Heading -->
+            <div class="services-header">
+                <h2 data-i18n="servicesHeader">Our Exclusive Services</h2>
+                <p data-i18n="servicesDescription">Discover a variety of tailored massage therapies designed for your well-being and relaxation.</p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="services-list">
+                <!-- Service Item 1 -->
+                <div class="service-item">
+                    <div class="service-image">
+                        <img src="assets/images/massage1.jpeg" alt="Relaxing face massage session">
+                    </div>
+                    <div class="service-content">
+                        <h3 data-i18n="service1Name">Face Relax Massage</h3>
+                        <p data-i18n="service1Description">A revitalizing facial massage that promotes hydration, elasticity, and rejuvenation for your skin.</p>
+                        <button class="service-cta">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- Service Item 2 -->
+                <div class="service-item">
+                    <div class="service-image">
+                        <img src="assets/images/massage2.jpeg" alt="Full body massage for stress relief">
+                    </div>
+                    <div class="service-content">
+                        <h3 data-i18n="service2Name">Full Body Massage</h3>
+                        <p data-i18n="service2Description">Relieve stress and muscle tension with our full-body therapeutic massage for total relaxation.</p>
+                        <p data-i18n="service2Description"></p>
+                        <button class="service-cta">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- Service Item 3 -->
+                <div class="service-item">
+                    <div class="service-image">
+                        <img src="assets/images/massage3.jpeg" alt="Hot stone massage for deep relaxation">
+                    </div>
+                    <div class="service-content">
+                        <h3 data-i18n="service3Name">Hot Stone Massage</h3>
+                        <p data-i18n="service3Description">Experience deep relaxation with the soothing warmth of hot stones on your body.</p>
+                        <button class="service-cta">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section: Updated and Enhanced -->
+        <section id="about">
+            <div class="about-container">
+
+                <!-- Text Content -->
+                <div class="about-content">
+                    <h2 data-i18n="aboutHeader">About Us</h2>
+                    <p data-i18n="aboutDescription">Welcome to our massage center, your sanctuary for relaxation and well-being...</p>
+                    <ul>
+                        <li data-i18n="aboutPoint1">Certified and experienced therapists: Ensuring top-quality services.</li>
+                        <li data-i18n="aboutPoint2">Customized treatments: Tailored to meet your unique needs.</li>
+                        <li data-i18n="aboutPoint3">Luxurious ambiance: Providing a tranquil escape.</li>
+                    </ul>
+                    <button class="cta-button">Learn More About Us</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 data-i18n="contactHeader">Get in Touch with Us</h2>
+            <p data-i18n="contactDescription">We’d love to hear from you! Feel free to drop us a message...</p>
+            <form action="/submit" method="POST">
+                <label for="name" data-i18n="formNameLabel">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" data-i18n="formNamePlaceholder" required>
+
+                <label for="email" data-i18n="formEmailLabel">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" data-i18n="formEmailPlaceholder" required>
+
+                <label for="message" data-i18n="formMessageLabel">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message here" data-i18n="formMessagePlaceholder" required></textarea>
+
+                <button type="submit" data-i18n="contactCTA"><span>Send Your Message Now</span></button>
+            </form>
+            <div class="form-status">
+                <!-- Success or error messages can be added here dynamically -->
+            </div>
+        </section>
+
+        <!-- Footer: Includes copyright and social media links -->
+        <footer>
+            <p data-i18n="footer">&copy; 2025 Massage Center. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" data-i18n="socialFacebook">Facebook</a> |
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" data-i18n="socialInstagram">Instagram</a> |
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" data-i18n="socialTwitter">Twitter</a>
+            </div>
+
+            <!-- Developer Credit -->
+            <p>Developed by <a href="https://github.com/3nar" target="_blank" rel="noopener noreferrer">3nar</a></p>
+        </footer>
+
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
